@@ -9,7 +9,7 @@ except:
 s = 0
 count = 0
 for line in fhandle:
-    line.rstrip()
+    line = line.rstrip()
     if not line.startswith('X-DSPAM-Confidence:'):
         continue
 
