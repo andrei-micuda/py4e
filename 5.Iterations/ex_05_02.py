@@ -8,7 +8,7 @@ while True:
     try:
         n = int(raw)
     except:
-        print("Invalid input")
+        print("Invalid input.")
         continue
 
     if mn is None:
