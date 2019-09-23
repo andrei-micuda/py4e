@@ -85,7 +85,7 @@ for track in tracks:
     album_id = ids[0]
     genre_id = ids[1]
     cur.execute('''
-    INSERT OR IGNORE INTO Track (title, album_id, genre_id, len, rating, count)
+    INSERT OR UPDATE INTO Track (title, album_id, genre_id, len, rating, count)
     VALUES (?, ?, ?, ?, ?, ?);
     ''', (track_title, album_id, genre_id, track_len, track_rating, track_count))
 
